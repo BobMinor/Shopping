@@ -1,13 +1,11 @@
 
         
-        var Product = Backbone.Model.extend({
-            defaults: function(){
-                return {
-                    name: ''
-                }
-            }
-        });
-        var ProductBasket = Backbone.Collection.extend({model:Product});
+                var Product = Backbone.Model.extend({
+                           defaults: {
+                                name: ''
+                           }
+                         });
+                var ProductBasket = Backbone.Collection.extend({model:Product});
  
             
         
