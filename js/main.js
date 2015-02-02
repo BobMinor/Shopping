@@ -37,8 +37,8 @@
                                  },
 
                         renderAdd: function(event){
-                                  x=event.get('name');
-                                  this.$("#basket-"+x).html(this.prods.where({name: x}).length);
+                                  var x = event.get('name');
+                                  this.$el.find("#basket-"+x).html(this.prods.where({name: x}).length);
                                  },
 
                         addToBasket: function(event){
